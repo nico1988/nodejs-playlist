@@ -1,4 +1,6 @@
 # node-js-playlist
+原仓库只有14章之前的，补充了一些
+# node-js-playlist
 CSS and asset files for the Net Ninja YouTube nodejs playlist
 
 The final project code can be found in the public/assests folder of this repo
