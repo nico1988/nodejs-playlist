@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+please input url /profile/name/age/id
+<h1>
+this is profile ejs , your profile
+</h1>
+<div>
+    <%- include('partials/nav.ejs') %>
+
+    <p>name <%= data.name%></p>
+    <p>age <%= data.age%></p>
+    <p>id <%= data.id%></p>
+    <ul>
+        <% data.hobbies.forEach(function(item){ %>
+            <li><%= item %></li>
+        <% }); %>
+    </ul>
+</div>
+</body>
+</html>

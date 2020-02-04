@@ -1,7 +1,9 @@
 var fs = require('fs');
 
 var file = fs.readFile('input.txt','utf8',function(err,data){
-    fs.writeFile('writeme.txt',data);
+    fs.writeFile('writeme.txt',data,function () {
+
+    });
     console.log(data);
 });
 
